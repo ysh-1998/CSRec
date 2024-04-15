@@ -22,8 +22,8 @@ cudatoolkit==11.3.1
 ```bash
 git clone https://github.com/ysh-1998/CSRec.git
 ```
-
-2. Run model on the build-in dataset
+2. Download data from [Google Drive](https://drive.google.com/drive/folders/1p5tSEtl8YlsMeliG6zdr9n60a6vbKH4M?usp=sharing) and put it in the `dataset` folder.
+3. Run model on the build-in dataset
 ```bash
 # Electronics
 python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Electronics"
