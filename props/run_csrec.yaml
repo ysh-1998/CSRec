@@ -1,0 +1,12 @@
+data_path: '../dataset/Amazon/csrec_datasets'
+topk: [10, 50]
+metrics: [HIT, NDCG]
+valid_metric: NDCG@10
+eval_args: 
+  split: {'RS': [0.8, 0.1, 0.1]}
+  group_by: user
+  order: RO
+  mode: uni999
+temperature: 0.05
+n_share_entity: 658
+eval_batch_size: 10240000
