@@ -26,9 +26,13 @@ git clone https://github.com/ysh-1998/CSRec.git
 3. Run model on the build-in dataset
 ```bash
 # Electronics
-python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Electronics"
-python run_base.py --gpu_id=0 --model="CKE" --kg_name="coms" --dataset="Electronics"
+python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Electronics" --temperature=0.01
+python run_csrec.py --gpu_id=0 --model="CFKG" --cs_kg_name="coms" --dataset="Electronics" --temperature=0.1
+python run_base.py --gpu_id=0 --model="CKE" --kg_name="merge" --dataset="Electronics"
+python run_base.py --gpu_id=0 --model="CFKG" --kg_name="merge" --dataset="Electronics"
 # Office
-python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Office"
-python run_base.py --gpu_id=0 --model="CKE" --kg_name="coms" --dataset="Office"
+python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Office" --temperature=0.1
+python run_csrec.py --gpu_id=0 --model="CFKG" --cs_kg_name="coms" --dataset="Office" --temperature=0.3 --learning_rate=0.005
+python run_base.py --gpu_id=0 --model="CKE" --kg_name="merge" --dataset="Office"
+python run_base.py --gpu_id=0 --model="CFKG" --kg_name="merge" --dataset="Office"
 ```
