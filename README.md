@@ -27,8 +27,8 @@ git clone https://github.com/ysh-1998/CSRec.git
 ```bash
 # Electronics
 python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Electronics"
-python run_csrec.py --gpu_id=0 --model="CFKG" --cs_kg_name="coms" --dataset="Electronics"
+python run_base.py --gpu_id=0 --model="CKE" --kg_name="coms" --dataset="Electronics"
 # Office
 python run_csrec.py --gpu_id=0 --model="CKE" --cs_kg_name="coms" --dataset="Office"
-python run_csrec.py --gpu_id=0 --model="CFKG" --cs_kg_name="coms" --dataset="Office"
+python run_base.py --gpu_id=0 --model="CKE" --kg_name="coms" --dataset="Office"
 ```

@@ -1,4 +1,4 @@
-data_path: '../dataset/'
+data_path: 'dataset/'
 topk: [10, 50]
 metrics: [HIT, NDCG]
 valid_metric: NDCG@10
